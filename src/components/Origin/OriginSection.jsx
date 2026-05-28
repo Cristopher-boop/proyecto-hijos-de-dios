@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import mineros from "../../assets/mineros.png";
+import mineros from "../../assets/rodrigo3.png";
 
 export default function OriginSection() {
   return (
