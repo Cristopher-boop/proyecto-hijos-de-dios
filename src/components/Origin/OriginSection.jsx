@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import mineros from "../../assets/rodrigo3.png";
 
 export default function OriginSection() {
@@ -33,19 +32,15 @@ export default function OriginSection() {
             <div className="w-40 h-1 bg-red-600 rounded-full mt-8 mb-10" />
 
             <p className="text-xl text-gray-300 leading-10">
-              Todo comenzó en las minas abandonadas de Potosí. Un grupo de
-              trabajadores encontró una extraña sustancia enterrada bajo la
-              tierra.
+              El horror nació en las minas de Potosí. Los trabajadores se expusieron a una extraña cepa bautizada como la <span className="text-red-500 font-bold">Gripe de la Coca</span> o <span className="text-red-500 font-bold">Virus Verde</span>.
             </p>
 
             <p className="mt-8 text-lg text-gray-500 leading-9">
-              Días después aparecieron los primeros síntomas. Violencia,
-              mutaciones y comportamientos inhumanos comenzaron a extenderse por
-              todo el país.
+              Inició con síntomas leves, mutó velozmente. Los infectados perdieron la razón, convirtiéndose en criaturas sedientas de violencia... zombies.
             </p>
 
             <p className="mt-8 text-lg text-gray-500 leading-9">
-              Cuando las autoridades reaccionaron, Bolivia ya había colapsado.
+              La infección saltó de los socavones a las ciudades. Para cuando el gobierno quiso reaccionar, Bolivia ya había colapsado.
             </p>
           </motion.div>
 
