@@ -7,7 +7,6 @@ export default function HistoryBirth() {
   return (
     <section className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center py-32 px-8">
       
-      {/* IMAGEN DE FONDO CON ZOOM LENTO */}
       <motion.img
         initial={{ scale: 1.15 }}
         whileInView={{ scale: 1 }}
@@ -16,7 +15,6 @@ export default function HistoryBirth() {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* OVERLAYS CINEMÁTICOS (Capas oscuras para resaltar el texto) */}
       <div className="absolute inset-0 bg-black/60 z-10" />
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black z-10" />
       <div className="absolute inset-0 bg-white/5 blur-[120px] pointer-events-none z-10" />
