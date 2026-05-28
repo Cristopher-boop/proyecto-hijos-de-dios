@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 function BoomerModel() {
   const { scene } = useGLTF('/models/boomer-sombra.glb');
   
-  return <primitive object={scene} position={[-0.5, 0, -0.5]} scale={0.4} />;
+  return <primitive object={scene} position={[-0.5, -0.2, -0.5]} scale={0.27} />;
 }
 
 export default function BoomerSection() {
@@ -23,16 +23,15 @@ export default function BoomerSection() {
           transition={{ duration: 1 }}
         >
           <p className="uppercase tracking-[10px] text-red-500 mb-6">
-            Prueba 3D
+            Asset Enemigo
           </p>
           <h2 className="text-5xl md:text-7xl font-black leading-none text-white">
-            LA SOMBRA <br/>
-            <span className="text-red-600">DEL MINERO</span>
+            EL PRIMER INFECTADO <br/>
+            <span className="text-red-600">DE LAS MINAS</span>
           </h2>
           <div className="w-20 h-1 bg-red-600 rounded-full mt-6 mb-8" />
           <p className="text-gray-400 text-lg leading-relaxed">
-            Modelo 3D del Boomer Minero integrado de prueba. 
-            Mantén presionado el clic y arrastra para rotar la cámara alrededor de la sombra.
+            Asset oficial 3D del proyecto. Esta abominación hinchada es el resultado de la infección en las profundidades de la mina. Interactúa con el modelo arrastrando el cursor para analizar a la amenaza.
           </p>
         </motion.div>
 
