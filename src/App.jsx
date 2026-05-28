@@ -6,10 +6,14 @@ import CinematicImage from "./components/Cinematic/CinematicImage";
 
 import OriginSection from "./components/Origin/OriginSection";
 
+import BackgroundMusic from "./components/Audio/BackgroundMusic";
+
 export default function App() {
   return (
-    <div className="w-screen overflow-x-hidden bg-black text-white">
+    <div className="bg-black text-white overflow-x-hidden">
       
+      <BackgroundMusic />
+
       <HeroSection />
 
       <PazSection />
