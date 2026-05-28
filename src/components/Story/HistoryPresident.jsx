@@ -2,11 +2,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 // Importamos la imagen desde la carpeta assets
 import presidencia from "../../assets/presidencia.jpeg"; 
+import PresidentVoice from "../Audio/PresidentVoice";
 
 export default function HistoryPresident() {
   return (
-    <section className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center py-32 px-8">
-      
+    <section
+      id="president"
+      className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center py-32 px-8"
+    >
+      <PresidentVoice />  
       <motion.img
         initial={{ scale: 1.15 }}
         whileInView={{ scale: 1 }}

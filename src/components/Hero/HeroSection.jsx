@@ -8,10 +8,16 @@ import FloatingParticles from "../Effects/FloatingParticles";
 
 import NoiseOverlay from "../Effects/NoiseOverlay";
 
+import HeroSound from "../Audio/HeroSound";
+
 export default function HeroSection() {
   return (
-    <section className="relative w-screen h-screen overflow-hidden">
-      
+    <section
+      id="hero"
+      className="relative w-screen h-screen overflow-hidden"
+    >  
+      <HeroSound />
+
       {/* BACKGROUND */}
       <motion.img
         initial={{ scale: 1.15 }}

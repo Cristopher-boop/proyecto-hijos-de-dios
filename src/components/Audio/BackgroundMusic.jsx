@@ -55,6 +55,7 @@ export default function BackgroundMusic() {
     <>
       {/* AUDIO */}
       <audio
+        id="background-music"
         ref={audioRef}
         loop
       >

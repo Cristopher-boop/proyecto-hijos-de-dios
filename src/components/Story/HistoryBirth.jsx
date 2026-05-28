@@ -3,10 +3,16 @@ import { motion } from 'framer-motion';
 // Importamos la imagen desde la carpeta assets
 import bolivia from "../../assets/bolivia.jpeg"; 
 
+import BirthVoice from "../Audio/BirthVoice";
+
 export default function HistoryBirth() {
   return (
-    <section className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center py-32 px-8">
-      
+    <section
+      id="birth"
+      className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center py-32 px-8"
+    >
+      <BirthVoice />
+        
       <motion.img
         initial={{ scale: 1.15 }}
         whileInView={{ scale: 1 }}
