@@ -1,23 +1,22 @@
 import HeroSection from "./components/Hero/HeroSection";
+
 import PazSection from "./components/Paz/PazSection";
+
 import CinematicImage from "./components/Cinematic/CinematicImage";
+
 import OriginSection from "./components/Origin/OriginSection";
 
 export default function App() {
   return (
-    <main className="bg-black text-white overflow-x-hidden">
+    <div className="w-screen overflow-x-hidden bg-black text-white">
       
-      {/* HERO */}
       <HeroSection />
 
-      {/* HISTORIA DE PAZ */}
       <PazSection />
 
-      {/* IMAGEN CINEMATOGRÁFICA */}
       <CinematicImage />
 
-      {/* ORIGEN */}
       <OriginSection />
-    </main>
+    </div>
   );
 }
