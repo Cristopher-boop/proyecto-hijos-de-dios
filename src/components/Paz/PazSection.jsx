@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import rodrigo from "../../assets/rodrigo.png";
+import rodrigo from "../../assets/rodrigo2.png";
 
 export default function PazSection() {
   return (
