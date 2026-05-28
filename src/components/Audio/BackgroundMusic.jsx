@@ -5,7 +5,7 @@ import {
   FaVolumeMute,
 } from "react-icons/fa";
 
-import music from "../../assets/audio/left.mp3";
+import music from "../../assets/audio/left2.mp3";
 
 export default function BackgroundMusic() {
   const audioRef = useRef(null);
