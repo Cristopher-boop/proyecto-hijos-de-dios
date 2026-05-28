@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowNavbar(window.scrollY > 100);
+      setShowNavbar(window.scrollY > 80);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -14,21 +15,23 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-700 ${
-        showNavbar
-          ? "translate-y-0 opacity-100"
-          : "-translate-y-full opacity-0"
-      }`}
+    <motion.nav
+      initial={{ y: -100 }}
+      animate={{
+        y: showNavbar ? 0 : -120,
+      }}
+      transition={{ duration: 0.5 }}
+      className="fixed top-0 left-0 w-full z-50"
     >
-      <div className="mx-6 mt-5 rounded-2xl border border-white/10 bg-black/40 backdrop-blur-2xl">
-        <div className="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+      <div className="mx-6 mt-5 rounded-2xl border border-white/10 bg-black/30 backdrop-blur-2xl">
+        
+        <div className="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
           
           <h1 className="text-2xl md:text-4xl font-black tracking-[6px] text-red-500">
-            APOCALIPSIS BOLIVIA
+            APOCALIPSIS
           </h1>
 
-          <div className="hidden md:flex items-center gap-10 text-lg font-semibold text-gray-300">
+          <div className="hidden md:flex gap-10 text-gray-300 font-semibold">
             <a href="#historia" className="hover:text-red-500 transition">
               Historia
             </a>
@@ -37,12 +40,12 @@ export default function Navbar() {
               Rodrigo Paz
             </a>
 
-            <button className="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-xl transition font-bold">
-              Jugar
-            </button>
+            <a href="#final" className="hover:text-red-500 transition">
+              Final
+            </a>
           </div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
